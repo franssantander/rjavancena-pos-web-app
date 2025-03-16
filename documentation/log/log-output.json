@@ -1,0 +1,79 @@
+      // *********************************** //
+            // Start checking changes
+            // Get the changes of the fields
+            $result_update_logs_old_new = $this->helper->updateLogsOldNew(
+                $user_info, // the model to update
+                $this->fillable_attr_user_info->arrToUpdates(), // fields to update
+                $result_merge_data, // the merge of file and user input
+                0, // if the database value is all lower case must 1 here to match the old new
+                1, // if the database value is all capital case must 1 here to match the old new
+            );
+            // No changes return error
+            if (
+                is_object($result_update_logs_old_new)
+                && method_exists($result_update_logs_old_new, 'getStatusCode')
+                && $result_update_logs_old_new->getStatusCode() == Response::HTTP_UNPROCESSABLE_ENTITY
+            ) {
+                return $result_update_logs_old_new;
+            }
+            // End checking changes
+            // *********************************** //
+
+array:14 [ // app\Http\Controllers\UserInfoController.php:481
+  "first_name" => array:2 [
+    "old" => "JACK"
+    "new" => "JOHN UPDATE"
+  ]
+  "middle_name" => array:2 [
+    "old" => "RED"
+    "new" => "LOVE UPDATE"
+  ]
+  "last_name" => array:2 [
+    "old" => "TEST"
+    "new" => "BLACK UPDATE"
+  ]
+  "address_1" => array:2 [
+    "old" => "BLK1 LOT1 PH1"
+    "new" => "BLK3 LOT3 PH3"
+  ]
+  "address_2" => array:2 [
+    "old" => "BLK1 LOT1 PH1"
+    "new" => "BLK3 LOT3 PH3"
+  ]
+  "region_code" => array:2 [
+    "old" => "030000000"
+    "new" => "030000001"
+  ]
+  "province_code" => array:2 [
+    "old" => "031400000"
+    "new" => "031400001"
+  ]
+  "city_or_municipality_code" => array:2 [
+    "old" => "031413000"
+    "new" => "031413001"
+  ]
+  "barangay_code" => array:2 [
+    "old" => "031413033"
+    "new" => "031413031"
+  ]
+  "region_name" => array:2 [
+    "old" => "REGION III"
+    "new" => "REGION III X"
+  ]
+  "province_name" => array:2 [
+    "old" => "BULACAN"
+    "new" => "BULACAN X"
+  ]
+  "city_or_municipality_name" => array:2 [
+    "old" => "NORZAGARAY"
+    "new" => "NORZAGARAY X"
+  ]
+  "barangay_name" => array:2 [
+    "old" => "FRIENDSHIP VILLAGE RESOURCES"
+    "new" => "FRIENDSHIP VILLAGE RESOURCES X"
+  ]
+  "description_location" => array:2 [
+    "old" => "KANTO 7 11"
+    "new" => "ANDOKS KANTO"
+  ]
+]

@@ -1,0 +1,21 @@
+// This is must be the format of CREATE LOGS
+{
+    "fields": [
+        {
+            "label": "ip_address",
+            "new": "127.0.0.1"
+        }
+    ]
+}
+
+
+// This is must be the format of UPDATE LOGS
+{
+    "fields": [
+        {
+            "label": "image",
+            "old": "eyJpdiI6IjIrelA0cUxTcmJwam5rVjV6V2VEMVE9PSIsInZhbHVlIjoicXVPa1J1TlE0c1ZFb3ZVMVEvQ1FzRW1ZUGJhNFBPTy82SitRb09hdGY0T0lzYjBxaTBTb09EUC9TWlZuc3Rqa01BZjZ6ejdkd3djTHd2bjd5ZWhiUmJ4eVI4MnhFemFIQXFqcnZTZ2NlMEM3c2tJVkVtQzc1MkVDR0xXa3RRQW9CT1dJTGZNa0d1aEl2dStEUUVTcUhBPT0iLCJtYWMiOiJjYWVjZGJhZTBkMDdiYTVmMTc1MDRkNDE4Yjk0N2MxMDA2ODY0NGI1OWY2Y2Q3MWEyZmIwNWRlYTY5MmYwZDZmIiwidGFnIjoiIn0=",
+            "new": "eyJpdiI6InFHbnZqbHJObXR5U0FNc0RYeTdFNVE9PSIsInZhbHVlIjoiMVpMdC8ydW1lbTMrRXUxYmZ0TnpFeWkvMk1KUEluZi9uazNZaGJZWnNuVnRPZk1IcjhCd1c5N1RaNkM3My9KWFVvdTRrTnZwemtKMUZQb2QwNDRCM3dPYlZIdDZrTWJzWm5sRjNJT1Z6cnpEcDdNRFJTUUZTaDFpREJhdDVmNUNsOU1OVDZtK0hNbmpFeGM4d1N1dlZnPT0iLCJtYWMiOiJlMzhlOWNjOGJjZTg3ZTMxYmY0ZDY5M2ZjN2RiMWYyZDEzMDQwNjVkNjVhNzNmMWM2NzczNmI1MTE5NGMxYTgyIiwidGFnIjoiIn0="
+        }
+    ]
+}
