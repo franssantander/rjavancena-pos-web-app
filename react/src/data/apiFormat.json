@@ -1,0 +1,67 @@
+{
+  "message": "Successfully Retrieve Data",
+  "data": {
+    "inventory": [
+      {
+        "inventory_id": "eyJpdiI6InRhb0tUMXVHN3NxbVY5alBqT3h5YVE9PSIsInZhbHVlIjoibEp3RUs2M2hPODcxZEhKKzRLQlpYUT09IiwibWFjIjoiZjY4ZWNhYmE3OTVkMWMxYzQzYmI0ZGI2Nzg3Y2E3ZTZkN2Y5Yzc3ZGM3Yzk4M2E4OWFmM2E2N2E3ZDE5NTg0MCIsInRhZyI6IiJ9",
+        "name": "z",
+        "category": "prod-z",
+        "created_at": "May 12, 2024 12:30 am",
+        "updated_at": "May 12, 2024 12:30 am",
+        "variant": 0,
+        "stock": 0,
+        "total_sales": 0,
+        "total_discounted": 0,
+        "total_return": 0,
+        "action": [
+          {
+            "url": "inventory/parent/update",
+            "payload": ["inventory_id", "name", "category", "eu_device"],
+            "method": "POST",
+            "icon": "radix-icons:pencil-1",
+            "button_name": "Edit",
+            "container": "modal",
+            "details": [
+              {
+                "label": "Product Name",
+                "type": "input",
+                "value": "z"
+              },
+              {
+                "label": "Product Category",
+                "type": "input",
+                "value": "prod-z"
+              }
+            ]
+          },
+          {
+            "url": "inventory/parent/destroy",
+            "payload": ["inventory_id", "eu_device"],
+            "method": "DELETE",
+            "icon": "radix-icons:trash",
+            "button_name": "Delete",
+            "container": "modal",
+            "details": [
+              {
+                "label": "Product Name",
+                "type": "input",
+                "value": "z"
+              },
+              {
+                "label": "Product Category",
+                "type": "input",
+                "value": "prod-z"
+              }
+            ]
+          }
+        ],
+        "view": [
+          {
+            "url": "inventory/parent/product/show/eyJpdiI6InRhb0tUMXVHN3NxbVY5alBqT3h5YVE9PSIsInZhbHVlIjoibEp3RUs2M2hPODcxZEhKKzRLQlpYUT09IiwibWFjIjoiZjY4ZWNhYmE3OTVkMWMxYzQzYmI0ZGI2Nzg3Y2E3ZTZkN2Y5Yzc3ZGM3Yzk4M2E4OWFmM2E2N2E3ZDE5NTg0MCIsInRhZyI6IiJ9",
+            "method": "GET"
+          }
+        ]
+      }
+    ]
+  }
+}
